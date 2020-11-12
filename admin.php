@@ -11,11 +11,7 @@
 	<title>Quản lý cán bộ</title>
 	<meta charset="utf-8">
 	<style type="text/css">
-
-
-		*{
-			margin: 0;
-		}
+		
 		.img{
 			height: 50px;
 			width: 50px;
