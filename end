@@ -1,0 +1,569 @@
+[1mdiff --git a/admin.php b/admin.php[m
+[1mindex b6ae7dd..18efdae 100644[m
+[1m--- a/admin.php[m
+[1m+++ b/admin.php[m
+[36m@@ -11,11 +11,7 @@[m
+ 	<title>Quản lý cán bộ</title>[m
+ 	<meta charset="utf-8">[m
+ 	<style type="text/css">[m
+[31m-[m
+[31m-[m
+[31m-		*{[m
+[31m-			margin: 0;[m
+[31m-		}[m
+[32m+[m[41m		[m
+ 		.img{[m
+ 			height: 50px;[m
+ 			width: 50px;[m
+[1mdiff --git a/xl_login.sublime-workspace b/xl_login.sublime-workspace[m
+[1mdeleted file mode 100644[m
+[1mindex c2d2cba..0000000[m
+[1m--- a/xl_login.sublime-workspace[m
+[1m+++ /dev/null[m
+[36m@@ -1,546 +0,0 @@[m
+[31m-{[m
+[31m-	"auto_complete":[m
+[31m-	{[m
+[31m-		"selected_items":[m
+[31m-		[[m
+[31m-			[[m
+[31m-				"us",[m
+[31m-				"username"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"print",[m
+[31m-				"print_r"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"mysqli_fe",[m
+[31m-				"mysqli_fetch_assoc〔function〕"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"mysqli_num",[m
+[31m-				"mysqli_num_rows〔function〕"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"mysqli_co",[m
+[31m-				"mysqli_connect〔function〕"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"tar",[m
+[31m-				"$target_file〔variable〕"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"file",[m
+[31m-				"fileupload"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"grid",[m
+[31m-				"grid-gap\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"f",[m
+[31m-				"flex\tdisplay"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"ro",[m
+[31m-				"row"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"pr",[m
+[31m-				"printf"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"mysql_fe",[m
+[31m-				"mysql_fetch_assoc"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"o",[m
+[31m-				"overflow\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"gri",[m
+[31m-				"grid"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"gr",[m
+[31m-				"grid-area\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"my",[m
+[31m-				"mysql_close"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"co",[m
+[31m-				"conn"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"conn",[m
+[31m-				"connection"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"_Ser",[m
+[31m-				"$_SESSION〔variable〕"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"re",[m
+[31m-				"response"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"se",[m
+[31m-				"$secret〔variable〕"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"fu",[m
+[31m-				"function"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"fl",[m
+[31m-				"flex\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"fle",[m
+[31m-				"flex-grow\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"margin",[m
+[31m-				"margin\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"sty",[m
+[31m-				"style"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"backge",[m
+[31m-				"background-image\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"pa",[m
+[31m-				"padding-top\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"padd",[m
+[31m-				"padding-left\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"font-s",[m
+[31m-				"font-style\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"mar",[m
+[31m-				"margin-top\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"font",[m
+[31m-				"font-weight\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"ma",[m
+[31m-				"margin-top\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"li",[m
+[31m-				"line-height\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"fon",[m
+[31m-				"font-weight\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"text",[m
+[31m-				"text-align\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"tex",[m
+[31m-				"text-align\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"p",[m
+[31m-				"p\tTag"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"fo",[m
+[31m-				"font-weight\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"lis",[m
+[31m-				"list-style-type\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"border-r",[m
+[31m-				"border-right\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"bor",[m
+[31m-				"border\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"back",[m
+[31m-				"background-color\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"bo",[m
+[31m-				"bottom\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"rg",[m
+[31m-				"rgba()\tbackground-color"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"bac",[m
+[31m-				"background-color\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"s",[m
+[31m-				"src"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"u",[m
+[31m-				"uppercase\ttext-transform"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"flex",[m
+[31m-				"flex-direction\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"text-t",[m
+[31m-				"text-transform\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"a",[m
+[31m-				"auto\tmargin"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"text-tr",[m
+[31m-				"text-transform\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"background-c",[m
+[31m-				"background-color\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"di",[m
+[31m-				"display\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"sp",[m
+[31m-				"space-between\tjustify-content"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"box",[m
+[31m-				"box-sizing\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"te",[m
+[31m-				"text-align\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"c",[m
+[31m-				"circle\tlist-style-type"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"b",[m
+[31m-				"block\tdisplay"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"border-co",[m
+[31m-				"border-color\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"in",[m
+[31m-				"inline-block\tdisplay"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"m",[m
+[31m-				"msg"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"ac",[m
+[31m-				"action\tAttr"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"border-s",[m
+[31m-				"border-style\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"ali",[m
+[31m-				"align-items\tproperty"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"wid",[m
+[31m-				"width\tproperty"[m
+[31m-			][m
+[31m-		][m
+[31m-	},[m
+[31m-	"buffers":[m
+[31m-	[[m
+[31m-	],[m
+[31m-	"build_system": "",[m
+[31m-	"build_system_choices":[m
+[31m-	[[m
+[31m-	],[m
+[31m-	"build_varint": "",[m
+[31m-	"command_palette":[m
+[31m-	{[m
+[31m-		"height": 0.0,[m
+[31m-		"last_filter": "",[m
+[31m-		"selected_items":[m
+[31m-		[[m
+[31m-			[[m
+[31m-				"Package Control:",[m
+[31m-				"Package Control: Remove Package"[m
+[31m-			],[m
+[31m-			[[m
+[31m-				"Package Control: ",[m
+[31m-				"Package Control: List Packages"[m
+[31m-			][m
+[31m-		],[m
+[31m-		"width": 0.0[m
+[31m-	},[m
+[31m-	"console":[m
+[31m-	{[m
+[31m-		"height": 298.0,[m
+[31m-		"history":[m
+[31m-		[[m
+[31m-			"phpcs--tab - width = 2 / path / to / code",[m
+[31m-			"phpcs--tab - width = 4 / path / to / code",[m
+[31m-			"Material Theme: Activate theme",[m
+[31m-			"aterial Theme: Activate theme",[m
+[31m-			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",[m
+[31m-			"import urllib2,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"[m
+[31m-		][m
+[31m-	},[m
+[31m-	"distraction_free":[m
+[31m-	{[m
+[31m-		"menu_visible": true,[m
+[31m-		"show_minimap": false,[m
+[31m-		"show_open_files": false,[m
+[31m-		"show_tabs": false,[m
+[31m-		"side_bar_visible": false,[m
+[31m-		"status_bar_visible": false[m
+[31m-	},[m
+[31m-	"file_history":[m
+[31m-	[[m
+[31m-		"/C/xampp/htdocs/BT/xl_login.php",[m
+[31m-		"/C/xampp/htdocs/BT/index.php",[m
+[31m-		"/C/xampp/htdocs/BT/connect.php",[m
+[31m-		"/C/Users/Administrator/OneDrive - Sky University of Technology/Desktop/BT/index.php",[m
+[31m-		"/C/xampp/htdocs/Project/xl_login.php",[m
+[31m-		"/C/xampp/htdocs/BTL/login.php",[m
+[31m-		"/C/xampp/htdocs/Project/connect.php",[m
+[31m-		"/C/xampp/htdocs/BTL/style.css",[m
+[31m-		"/C/xampp/htdocs/TH3/bai1.php",[m
+[31m-		"/C/xampp/htdocs/Project/test.php",[m
+[31m-		"/C/xampp/htdocs/Project/main.php",[m
+[31m-		"/C/xampp/htdocs/Project/index.php",[m
+[31m-		"/C/xampp/htdocs/TH3/delete.php",[m
+[31m-		"/C/xampp/htdocs/Project/login.php",[m
+[31m-		"/C/xampp/htdocs/TH3/add.php",[m
+[31m-		"/C/xampp/htdocs/TH3/xl_add.php",[m
+[31m-		"/C/xampp/htdocs/uploadfile/upload.php",[m
+[31m-		"/C/xampp/htdocs/TH3/xl_update.php",[m
+[31m-		"/C/xampp/htdocs/TH3/update.php",[m
+[31m-		"/C/xampp/htdocs/uploadfile/upload.html",[m
+[31m-		"/C/xampp/htdocs/testimg/upload.php",[m
+[31m-		"/C/xampp/htdocs/testimg/upload.html",[m
+[31m-		"/C/xampp/htdocs/TH3/connect.php",[m
+[31m-		"/C/xampp/htdocs/New folder/img.php",[m
+[31m-		"/C/xampp/htdocs/TH3/get.php",[m
+[31m-		"/C/xampp/htdocs/TH3/view_user.php",[m
+[31m-		"/C/xampp/htdocs/TH3/qlkhachhang.php",[m
+[31m-		"/C/xampp/htdocs/TH2/mainpage.php",[m
+[31m-		"/C/xampp/htdocs/TH2/xulyDangnhap.php",[m
+[31m-		"/C/xampp/htdocs/TH2/Dangky.html",[m
+[31m-		"/C/xampp/htdocs/TH2/xulyDangky.php",[m
+[31m-		"/C/xampp/htdocs/TH2/dangnhap.html",[m
+[31m-		"/C/xampp/htdocs/TH1/Bai2",[m
+[31m-		"/C/xampp/htdocs/TH1/Bai3.php",[m
+[31m-		"/C/xampp/htdocs/TH1/Bai2.php",[m
+[31m-		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",[m
+[31m-		"/C/xampp/htdocs/captcha/index.php",[m
+[31m-		"/C/xampp/htdocs/captcha/submit.php",[m
+[31m-		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",[m
+[31m-		"/C/Users/Administrator/OneDrive - Sky University of Technology/Desktop/Web_myseft/test.php",[m
+[31m-		"/C/Users/Administrator/OneDrive - Sky University of Technology/Desktop/Web_myseft/index.html",[m
+[31m-		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Phpcs/phpcs.sublime-settings",[m
+[31m-		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/phpcs.sublime-settings",[m
+[31m-		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Phpcs/Default (Windows).sublime-keymap",[m
+[31m-		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",[m
+[31m-		"/C/Users/Administrator/OneDrive - Sky University of Technology/Documents/main.js",[m
+[31m-		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",[m
+[31m-		"/C/Users/Administrator/OneDrive - Sky University of Technology/Documents/index.html",[m
+[31m-		"/C/Users/Administrator/Downloads/style.css",[m
+[31m-		"/C/Users/Administrator/Downloads/index (1).html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai3.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai2.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai1.html",[m
+[31m-		"/C/Users/Administrator/Desktop/bs.html",[m
+[31m-		"/C/Users/Administrator/Desktop/bai7.html",[m
+[31m-		"/C/Users/Administrator/Desktop/index.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai1/Bai4.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai1/Bai5.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai1/Bai3.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai1/Bai2.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai1/Bai6.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan2_bai6.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai1/bai1.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan1_bai12.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan1_bai11.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan1_bai7.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan1_bai8.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan2.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan2-bai2.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan1bai1.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan1bai2.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan1_bai5.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan1bai4.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan1bai3.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Phan2-bai1.html",[m
+[31m-		"/D/Học tập/Hocweb/Tables/Bai3.html",[m
+[31m-		"/D/Học tập/Hocweb/Tables/Bai14.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Dayhtml/index.html",[m
+[31m-		"/C/Users/Administrator/Desktop/HTML/index.html",[m
+[31m-		"/D/Học tập/Hocweb/Tables/index.html",[m
+[31m-		"/D/Học tập/Hocweb/Tables/Test.html",[m
+[31m-		"/D/Học tập/Hocweb/Tables/Bai4b.html",[m
+[31m-		"/D/Học tập/Hocweb/Tables/Bai13.html",[m
+[31m-		"/D/Học tập/Hocweb/Tables/Bai1.html",[m
+[31m-		"/D/Học tập/Hocweb/Tables/Bai12.html",[m
+[31m-		"/D/Học tập/Hocweb/Tables/Bai2.html",[m
+[31m-		"/D/Học tập/Hocweb/Tables/1.html",[m
+[31m-		"/C/Users/Administrator/Downloads/bai12.html",[m
+[31m-		"/C/Users/Administrator/Desktop/bai5.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Test.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai14.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai13.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai12.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai4a.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai11.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai4b.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai6.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai10.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai11",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai9.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai8.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Bai7.html",[m
+[31m-		"/C/Users/Administrator/Desktop/Dogs Table",[m
+[31m-		"/C/Users/Administrator/Desktop/blank-template.html"[m
+[31m-	],[m
+[31m-	"find":[m
+[31m-	{[m
+[31m-		"height": 30.0[m
+[31m-	},[m
+[31m-	"find_in_files":[m
+[31m-	{[m
+[31m-		"height": 0.0,[m
+[31m-		"where_history":[m
+[31m-		[[m
+[31m-		][m
+[31m-	},[m
+[31m-	"find_state":[m
+[31m-	{[m
+[31m-		"case_sensitive": false,[m
+[31m-		"find_history":[m
+[31m-		[[m
+[31m-		],[m
+[31m-		"highlight": true,[m
+[31m-		"in_selection": false,[m
+[31m-		"preserve_case": false,[m
+[31m-		"regex": false,[m
+[31m-		"replace_history":[m
+[31m-		[[m
+[31m-		],[m
+[31m-		"reverse": false,[m
+[31m-		"show_context": true,[m
+[31m-		"use_buffer2": true,[m
+[31m-		"whole_word": false,[m
+[31m-		"wrap": true[m
+[31m-	},[m
+[31m-	"groups":[m
+[31m-	[[m
+[31m-		{[m
+[31m-			"sheets":[m
+[31m-			[[m
+[31m-			][m
+[31m-		}[m
+[31m-	],[m
+[31m-	"incremental_find":[m
+[31m-	{[m
+[31m-		"height": 30.0[m
+[31m-	},[m
+[31m-	"input":[m
+[31m-	{[m
+[31m-		"height": 0.0[m
+[31m-	},[m
+[31m-	"layout":[m
+[31m-	{[m
+[31m-		"cells":[m
+[31m-		[[m
+[31m-			[[m
+[31m-				0,[m
+[31m-				0,[m
+[31m-				1,[m
+[31m-				1[m
+[31m-			][m
+[31m-		],[m
+[31m-		"cols":[m
+[31m-		[[m
+[31m-			0.0,[m
+[31m-			1.0[m
+[31m-		],[m
+[31m-		"rows":[m
+[31m-		[[m
+[31m-			0.0,[m
+[31m-			1.0[m
+[31m-		][m
+[31m-	},[m
+[31m-	"menu_visible": true,[m
+[31m-	"output.find_results":[m
+[31m-	{[m
+[31m-		"height": 0.0[m
+[31m-	},[m
+[31m-	"pinned_build_system": "",[m
+[31m-	"project": "xl_login.sublime-project",[m
+[31m-	"replace":[m
+[31m-	{[m
+[31m-		"height": 56.0[m
+[31m-	},[m
+[31m-	"save_all_on_build": true,[m
+[31m-	"select_file":[m
+[31m-	{[m
+[31m-		"height": 0.0,[m
+[31m-		"last_filter": "",[m
+[31m-		"selected_items":[m
+[31m-		[[m
+[31m-		],[m
+[31m-		"width": 0.0[m
+[31m-	},[m
+[31m-	"select_project":[m
+[31m-	{[m
+[31m-		"height": 0.0,[m
+[31m-		"last_filter": "",[m
+[31m-		"selected_items":[m
+[31m-		[[m
+[31m-		],[m
+[31m-		"width": 0.0[m
+[31m-	},[m
+[31m-	"select_symbol":[m
+[31m-	{[m
+[31m-		"height": 0.0,[m
+[31m-		"last_filter": "",[m
+[31m-		"selected_items":[m
+[31m-		[[m
+[31m-		],[m
+[31m-		"width": 0.0[m
+[31m-	},[m
+[31m-	"selected_group": 0,[m
+[31m-	"settings":[m
+[31m-	{[m
+[31m-	},[m
+[31m-	"show_minimap": true,[m
+[31m-	"show_open_files": false,[m
+[31m-	"show_tabs": true,[m
+[31m-	"side_bar_visible": false,[m
+[31m-	"side_bar_width": 150.0,[m
+[31m-	"status_bar_visible": true,[m
+[31m-	"template_settings":[m
+[31m-	{[m
+[31m-	}[m
+[31m-}[m
