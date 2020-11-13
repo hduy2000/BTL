@@ -4,7 +4,6 @@
 	$query = "SELECT * FROM `user`";
 	$result = mysqli_query($conn, $query);
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +12,7 @@
 	<style type="text/css">
 
 
-		*{
+	*{
 			margin: 0;
 		}
 		.img{
@@ -34,7 +33,7 @@
 		        <th>Số điện thoại</th>
 		        <th>Email</th>
 		        <th>username</th>
-		       	<th>password</th>
+		    	<th>password</th>
 		       	<th>Action</th>
 		    </tr>
 		    <?php 
