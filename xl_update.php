@@ -1,5 +1,7 @@
 
 <?php 
+
+
 $conn = new mysqli("localhost", "root", "", "qlcb");
 		if ($conn->connect_error) {
 			die("Không kết nối :" . $conn->connect_error);
@@ -9,7 +11,7 @@ $conn = new mysqli("localhost", "root", "", "qlcb");
 
 if (isset($_POST['update_user'])){
 		
-		$id = $_GET["id"];		
+		$id = $_POST["id"];		
 		$name=$_POST['name'];
 		$email=$_POST['email'];
 		$sdt=$_POST['sdt'];
@@ -17,9 +19,9 @@ if (isset($_POST['update_user'])){
 		$addr = $_POST['addr'];
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-		$sql = "UPDATE `user` SET `username`=$username,`password`=$password,`name`=$name,`sex`=$name,`addr`=$addr,`sdt`=$sdt,`email`=$email WHERE id='$id'";
+		$sql = "UPDATE `user` SET username='$username',password='$password',name='$name',sex='$sex',addr='$addr',sdt='$sdt',email='$email' WHERE id='$id'";
 		$edit = mysqli_query($conn, $sql);
-
+		
 		if ($edit=== TRUE) {
 		header ('location: admin.php');
 		} else {
@@ -28,4 +30,5 @@ if (isset($_POST['update_user'])){
 	 
 		$conn->close();
 		}
+	
 ?>
