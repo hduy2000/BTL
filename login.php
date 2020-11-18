@@ -23,7 +23,7 @@
 		        exit;
 		    }
 			//Kiểm tra tên đăng nhập có tồn tại không
-		    $query = mysqli_query($conn,"SELECT id,username, password,position FROM user WHERE username='$username'");
+		    $query = mysqli_query($conn,"SELECT username, password,position FROM user WHERE username='$username'");
 
 		    if (mysqli_num_rows($query) == 0) {
 		        echo "Tên đăng nhập này không tồn tại. Vui lòng kiểm tra lại. <a href='javascript: history.go(-1)'>Trở lại</a>";
