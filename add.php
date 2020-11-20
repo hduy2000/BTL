@@ -13,7 +13,7 @@
 </head>
 <body>
 
-		   <form name="form-add"  action="add.php" method="POST">
+		   <form name="form-add"  action="" method="POST">
 		   		<label for="magv">Mã giảng viên:</label> <input type="text" value="" name="magv" id="magv"><br/>
                 <label for="name">Tên giảng viên:</label> <input type="text" value="" name="name"><br/>
 	           
@@ -36,10 +36,11 @@
 <?php 
 	
 	require 'connect.php';
+		
 	if (isset($_POST["update_user"])){
 		$magv= $_POST['magv'];
 		$username = $_POST['username'];
-		$query = "SELECT * FROM `user` WHERE magv = '$magv'";
+		$query = "SELECT * FROM `user` WHERE magv = '$magv' or username='$username'";
 
 		$result = mysqli_query($conn, $query);
 		$row = mysqli_fetch_assoc($result);
@@ -54,6 +55,26 @@
 
 		# code...
 		}
+		else{
+			$magv= $_POST['magv'];
+			$name = $_POST['name'];
+			$addr = $_POST['addr'];
+			$phone = $_POST['phone'];
+			$email = $_POST['email'];
+			$sex = $_POST['sex'];
+			$username = $_POST['username'];
+			$password = $_POST['password'];
+			echo $magv;
+
+			$sql = "INSERT INTO user(magv,name,sex,addr,phone,email,username,password) VALUES ('$magv','$name','$sex','$addr','$phone','$email','$username','$password')";
+			$query = mysqli_query($conn,$sql);
+			if ($query) {
+        		header ('location: admin.php');
+    		} else {
+        		echo "Error: " . $sql . "<br>" . $conn->error;
+    		}
+		}
+	
 
 //Đóng database
 $conn->close();
