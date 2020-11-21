@@ -1,7 +1,7 @@
 <?php 
 	require('connect.php');
 
-	$query = "SELECT * FROM `user`";
+	$query = "SELECT * FROM `user` WHERE position = '0'";
 	$result = mysqli_query($conn, $query);
 ?>
 <!DOCTYPE html>

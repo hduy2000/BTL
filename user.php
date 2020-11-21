@@ -9,11 +9,8 @@
     <?php 
     	require'connect.php';
   		$id=$_GET['id'];
-		$query = mysqli_query($conn,"SELECT  name,password,addr,email,sdt FROM  user WHERE id='$id'");
+		$query = mysqli_query($conn,"SELECT  * FROM  user WHERE magv='$id'");
 		$row = mysqli_fetch_array($query);
-
-
-	
      ?>
     <body>
 	<form  action="user.php">
@@ -26,8 +23,8 @@
 			<input type="text" class="form-control" readonly value="<?php echo $row['addr'] ?>">
 		</div>
 		<div class="form-group">
-		    <label for="email">Số điện thoại:</label>
-		    <input type="text" class="form-control" readonly value="<?php echo $row['sdt'] ?>">
+		    <label for="phone">Số điện thoại:</label>
+		    <input type="text" class="form-control" readonly value="<?php echo $row['phone'] ?>">
 		</div>
 		<div class="form-group">
 		    <label for="email">Email:</label>
